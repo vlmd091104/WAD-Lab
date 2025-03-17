@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>3-Column Flexbox Layout</title>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<style>
+		/* Basic setup */
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		html {
+			background-color: rgb(219, 136, 41);
+		}
+		h2 {
+			padding: 1em;
+			text-align: left;
+		}
+	
+
+	/* implement your CSS here */
+		header{
+			border-bottom: 2px solid #ef9c00;
+		}
+		body { 
+            width: 90%; 
+            background-color: white; 
+            margin: 15px auto; 
+            border: 2px solid #ef9c00; 
+            display: flex; 
+            flex-direction: column; 
+            min-height: 100vh;
+        } 
+		.container { 
+            display: flex; 
+            flex: 1;
+            gap: 20px;
+        } 
+		main { 
+            flex: 3;
+            background-color: #fafafa; 
+            padding: 20px; 
+            border-right: 2px solid #ef9c00; 
+			border-left: 2px solid #ef9c00;
+        } 
+		aside { 
+			flex: 1;
+			background-color: #f7f7f7; 
+			padding: 20px; 
+		} 
+		footer { 
+			border-top: 2px solid #ef9c00; 
+			text-align: center; 
+			padding: 1em; 
+		} 
+	</style>
+</head>
+<body>
+
+	<header>
+		<h2>3-Column Layout</h2>
+	</header>
+
+	<div class="container">
+		<aside class="sidebar">
+			<h2>Sidebar 1</h2>
+			<p>This is the first sidebar content.</p>
+		</aside>
+		<main class="main">
+			<h2>Main Content</h2>
+			<p>This is the main content section. It takes up more space compared to the sidebars.</p>
+		</main>
+
+
+
+		<aside class="sidebar">
+			<h2>Sidebar 2</h2>
+			<p>This is the second sidebar content.</p>
+		</aside>
+	</div>
+
+	<footer>
+		<h2>Footer</h2>
+	</footer>
+
+</body>
+</html>
